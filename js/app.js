@@ -1,9 +1,10 @@
 
 'use strict';
 /* App Module */
-var gmsacApp = angular.module('gmsacApp', ['ngRoute','analytics']);
-
-gmsacApp.config(['$routeProvider','$locationProvider',
+(function (angular) {
+  angular
+  .module('gmsacApp', ['ngRoute','analytics'])
+  .config(['$routeProvider','$locationProvider',
   function($routeProvider,$locationProvider) {
     $locationProvider.html5Mode(true);
 
@@ -21,6 +22,7 @@ gmsacApp.config(['$routeProvider','$locationProvider',
       });
 
 }]);
+}(window.angular));
 
 (function(angular) {
 
