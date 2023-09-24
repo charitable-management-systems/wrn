@@ -1,10 +1,9 @@
 
 'use strict';
 /* App Module */
-(function (angular) {
-  angular
-  .module('gmsacApp', ['ngRoute','analytics'])
-  .config(['$routeProvider','$locationProvider',
+var gmsacApp = angular.module('gmsacApp', ['ngRoute','analytics']);
+
+gmsacApp.config(['$routeProvider','$locationProvider',
   function($routeProvider,$locationProvider) {
     $locationProvider.html5Mode(true);
 
@@ -22,7 +21,6 @@
       });
 
 }]);
-}(window.angular));
 
 (function(angular) {
 
