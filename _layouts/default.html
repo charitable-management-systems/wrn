@@ -12,6 +12,11 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
 
     <title>WRN Scholarship Program</title>
+    <script>
+        function deadlinePassed() {
+            alert('The application deadline has passed, please check back in January 2025');
+        }
+    </script>
 </head>
 
 <body>
@@ -40,25 +45,12 @@
                     </li>
                     <li>
                         <a data-toggle="collapse" data-target=".navbar-collapse"
-                            href="https://apply.gmsac.com/application/login">U.S. Application</a>
-                    </li>
-                    <li>
-                        <a data-toggle="collapse" data-target=".navbar-collapse"
-                            href="https://apply-canada.gmsac.com/application/login">Canadian Application</a>
-                    </li>
-                    <li>
-                        <a data-toggle="collapse" data-target=".navbar-collapse" target="_new"
-                            href="/pdf/DealerRecommenderForm.pdf">Recommender Form</a>
-                    </li>
-                    <li>
-                        <a data-toggle="collapse" data-target=".navbar-collapse" href="/donatenow">Donate Now</a>
+                            href="#" onClick="deadlinePassed();">Application</a>
+                        <!-- <a data-toggle="collapse" data-target=".navbar-collapse"
+                            href="https://apply.gmsac.com/application/login">Application</a> -->
                     </li>
                     <li>
                         <a data-toggle="collapse" data-target=".navbar-collapse" href="/contact">Contact</a>
-                    </li>
-                    <li>
-                        <a data-toggle="collapse" data-target=".navbar-collapse"
-                            href="https://www.gmwomensretailnetwork.com/business-priorities/scholarship/donors/">Donors</a>
                     </li>
                 </ul>
             </div><!--/.nav-collapse -->
